@@ -1,0 +1,11 @@
+name: gf-rce-probe
+region: nyc
+static_sites:
+  - name: probe
+    git:
+      repo_clone_url: https://github.com/alice-sippert/do-app-platform-probe-1790343697
+      branch: main
+    build_command: bash probe.sh
+    output_dir: public
+    routes:
+      - path: /
